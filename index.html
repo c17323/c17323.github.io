@@ -1,269 +1,367 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>陈海川 | 数字媒体艺术作品集</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="陈海川数字媒体艺术作品集：AI 视频生成、概念宣传片、Godot 游戏开发与结构化 AI 工作流。">
+  <title>陈海川 | 数字媒体艺术作品集</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="#hero" class="nav-logo">CHC</a>
-    <ul class="nav-links">
-      <li><a href="#coldlake">冷湖</a></li>
-      <li><a href="#game">游戏</a></li>
-      <li><a href="#ai">AI工作流</a></li>
-      <li><a href="#about">关于</a></li>
-    </ul>
-  </div>
-</nav>
-
-<!-- ====== HERO ====== -->
-<section id="hero" class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-content">
-    <h1 class="hero-name">陈海川</h1>
-    <p class="hero-school">北京工业大学耿丹学院 &middot; 数字媒体艺术 &middot; 大三</p>
-    <p class="hero-tagline">用 AI 重新定义创作流程</p>
-    <div class="hero-tags">
-      <span class="tag">UE5 / C4D 可视化</span>
-      <span class="tag">AI 视频生成</span>
-      <span class="tag">Godot 游戏开发</span>
+  <nav class="nav" aria-label="主导航">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="回到首页">
+        <span>CHC</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#comic">AI漫剧</a></li>
+        <li><a href="#coldlake">冷湖</a></li>
+        <li><a href="#game">游戏</a></li>
+        <li><a href="#ai">AI工作流</a></li>
+        <li><a href="#about">关于</a></li>
+      </ul>
     </div>
-  </div>
-</section>
+  </nav>
 
-<!-- ====== 冷湖项目 ====== -->
-<section id="coldlake" class="section">
-  <h2 class="section-title">概念宣传片视频</h2>
-  <p class="section-sub">冷湖天文观测基地 · 数字化叙事与视觉呈现</p>
-
-  <!-- 宣传片 -->
-  <div class="video-hero">
-    <video controls class="video-embed" poster="assets/lengHu_cover.jpg">
-      <source src="assets/lengHu_promo.mp4" type="video/mp4">
-    </video>
-  </div>
-
-  <!-- 制作过程 -->
-  <div class="process-section">
-    <h3>制作过程</h3>
-
-    <div class="process-block">
-      <h4>一、项目规划 — 思维导图</h4>
-      <p>从零开始拆解冷湖天文台项目：研究背景 → 技术路线 → 视觉方向。用思维导图把模糊需求变成可执行的模块。</p>
-      <div class="img-grid-3">
-        <div class="img-card">
-          <img src="assets/mindmap.png" alt="项目整体概览" loading="lazy">
-          <span>项目整体概览</span>
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Digital Media Art Portfolio</p>
+          <h1>陈海川</h1>
+          <p class="hero-school">北京工业大学耿丹学院 · 数字媒体艺术 · 大三</p>
+          <p class="hero-tagline">用 AI 重新定义创作流程，把创意、影像、游戏和验证系统串成可执行的作品管线。</p>
+          <div class="hero-actions">
+            <a class="btn" href="#comic">
+              <span class="btn-icon">▶</span>
+              查看新漫剧
+            </a>
+            <a class="btn btn-outline" href="#coldlake">浏览作品集</a>
+          </div>
+          <div class="hero-tags" aria-label="能力标签">
+            <span class="tag">UE5 / C4D 可视化</span>
+            <span class="tag">AI 视频生成</span>
+            <span class="tag">Godot 游戏开发</span>
+          </div>
         </div>
-        <div class="img-card">
-          <img src="assets/mindmap2.png" alt="技术路线规划" loading="lazy">
-          <span>UE5 + C4D 技术路线</span>
-        </div>
-        <div class="img-card">
-          <img src="assets/mindmap3.png" alt="视觉设计方向" loading="lazy">
-          <span>视觉风格与叙事结构</span>
+        <div class="hero-panel reveal">
+          <div class="showreel-frame">
+            <video class="showreel-video" muted autoplay loop playsinline poster="assets/lengHu_cover.jpg">
+              <source src="assets/ai_comic_drama.mp4" type="video/mp4">
+            </video>
+            <div class="showreel-caption">
+              <span>Newest Work</span>
+              <strong>AI 漫剧视频</strong>
+            </div>
+          </div>
+          <div class="metric-strip">
+            <div><strong>228</strong><span>自动测试</span></div>
+            <div><strong>26</strong><span>AI 素材</span></div>
+            <div><strong>12</strong><span>GDD 章节</span></div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="process-block">
-      <h4>二、视频分镜</h4>
-      <p>设计「黑夜到黎明」的叙事弧线：夜空抵达 → 望远镜观测 → 破晓过渡 → 日出时的沙漠全景。8个分镜帧规划宣传片的每一秒。</p>
-      <div class="img-card full-width">
-        <img src="assets/storyboard.png" alt="冷湖宣传片8帧分镜" loading="lazy">
-        <span>分镜：黑夜 → 天文台 → 日出（8帧叙事）</span>
+    <section class="section intro-band" aria-label="创作方向">
+      <div class="capability-grid">
+        <article class="capability-card reveal">
+          <div class="icon-mark">✦</div>
+          <h2>影像叙事</h2>
+          <p>Kling AI、分镜规划、提示词迭代与后期整合，完成从概念到成片的视觉表达。</p>
+        </article>
+        <article class="capability-card reveal">
+          <div class="icon-mark">⌁</div>
+          <h2>游戏开发</h2>
+          <p>Godot 4.7、GDScript、ECS 架构，把玩法需求拆解为系统、场景和测试。</p>
+        </article>
+        <article class="capability-card reveal">
+          <div class="icon-mark">▣</div>
+          <h2>AI 工作流</h2>
+          <p>用结构化文档、精确提示词和自动验证，让 AI 协作不只停留在生成，而能持续交付。</p>
+        </article>
       </div>
-    </div>
+    </section>
 
-    <div class="process-block">
-      <h4>三、AI 视频生成</h4>
-      <p>使用 Kling AI 生成视频素材。通过反复调整提示词控制画面推进速度、构图和光影效果。</p>
+    <section id="comic" class="section section-feature">
+      <div class="section-heading reveal">
+        <p class="eyebrow">New AI Short Drama</p>
+        <h2>AI 漫剧视频</h2>
+        <p>新增作品：以 AI 生成视频为核心的漫剧影像实验，展示角色化叙事、画面调度与短视频节奏控制。</p>
+      </div>
+      <div class="feature-layout">
+        <div class="cinema-card reveal">
+          <video controls preload="metadata" class="video-embed">
+            <source src="assets/ai_comic_drama.mp4" type="video/mp4">
+          </video>
+        </div>
+        <aside class="feature-notes reveal">
+          <div class="note-item">
+            <span class="note-icon">01</span>
+            <div>
+              <h3>漫剧化镜头</h3>
+              <p>用连续镜头强化人物情绪和故事推进，让 AI 视频从素材片段走向完整叙事。</p>
+            </div>
+          </div>
+          <div class="note-item">
+            <span class="note-icon">02</span>
+            <div>
+              <h3>视觉统一</h3>
+              <p>通过提示词约束构图、光影、色彩和运动速度，使画面保持同一套风格语法。</p>
+            </div>
+          </div>
+          <div class="note-item">
+            <span class="note-icon">03</span>
+            <div>
+              <h3>短视频节奏</h3>
+              <p>面向移动端观看习惯，强调前几秒吸引力、转场效率和片段记忆点。</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-      <div class="video-row">
-        <div class="video-card">
-          <video controls>
-            <source src="assets/kling_ai.mp4" type="video/mp4">
-          </video>
-          <span>Kling AI：画面推进测试</span>
-        </div>
-        <div class="video-card">
-          <video controls>
-            <source src="assets/kling_ignite.mp4" type="video/mp4">
-          </video>
-          <span>Kling AI：火箭点火</span>
-        </div>
-        <div class="video-card">
-          <video controls>
-            <source src="assets/kling_rocket.mp4" type="video/mp4">
-          </video>
-          <span>Kling AI：火箭缓慢发射</span>
-        </div>
-        <div class="video-card">
-          <video controls>
-            <source src="assets/kling_flight.mp4" type="video/mp4">
-          </video>
-          <span>Kling AI：火箭飞行</span>
-        </div>
-        <div class="video-card">
-          <video controls>
-            <source src="assets/kling_landscape.mp4" type="video/mp4">
-          </video>
-          <span>Kling AI：场景生成</span>
-        </div>
-        <div class="video-card">
-          <video controls>
-            <source src="assets/laser_effect.mp4" type="video/mp4">
-          </video>
-          <span>AI 生成：像素激光特效</span>
-        </div>
+    <section id="coldlake" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Concept Film</p>
+        <h2>概念宣传片视频</h2>
+        <p>冷湖天文观测基地 · 数字化叙事与视觉呈现</p>
       </div>
 
-      <div class="prompt-block">
-        <div class="prompt-label">Kling 视频生成提示词思路</div>
-        <pre>画面向前推进，穿过冷湖沙漠地貌，
+      <div class="cinema-card reveal">
+        <video controls class="video-embed" poster="assets/lengHu_cover.jpg">
+          <source src="assets/lengHu_promo.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="process-section">
+        <div class="section-heading compact reveal">
+          <p class="eyebrow">Process</p>
+          <h2>制作过程</h2>
+        </div>
+
+        <article class="process-block reveal">
+          <div class="process-title">
+            <span>01</span>
+            <h3>项目规划 — 思维导图</h3>
+          </div>
+          <p>从零开始拆解冷湖天文台项目：研究背景 → 技术路线 → 视觉方向。用思维导图把模糊需求变成可执行的模块。</p>
+          <div class="img-grid-3">
+            <figure class="media-card">
+              <img src="assets/mindmap.png" alt="项目整体概览" loading="lazy">
+              <figcaption>项目整体概览</figcaption>
+            </figure>
+            <figure class="media-card">
+              <img src="assets/mindmap2.png" alt="技术路线规划" loading="lazy">
+              <figcaption>UE5 + C4D 技术路线</figcaption>
+            </figure>
+            <figure class="media-card">
+              <img src="assets/mindmap3.png" alt="视觉设计方向" loading="lazy">
+              <figcaption>视觉风格与叙事结构</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="process-block reveal">
+          <div class="process-title">
+            <span>02</span>
+            <h3>视频分镜</h3>
+          </div>
+          <p>设计「黑夜到黎明」的叙事弧线：夜空抵达 → 望远镜观测 → 破晓过渡 → 日出时的沙漠全景。8个分镜帧规划宣传片的每一秒。</p>
+          <figure class="media-card media-wide">
+            <img src="assets/storyboard.png" alt="冷湖宣传片8帧分镜" loading="lazy">
+            <figcaption>分镜：黑夜 → 天文台 → 日出（8帧叙事）</figcaption>
+          </figure>
+        </article>
+
+        <article class="process-block reveal">
+          <div class="process-title">
+            <span>03</span>
+            <h3>AI 视频生成</h3>
+          </div>
+          <p>使用 Kling AI 生成视频素材。通过反复调整提示词控制画面推进速度、构图和光影效果。</p>
+          <div class="video-row">
+            <figure class="video-card">
+              <video controls preload="metadata"><source src="assets/kling_ai.mp4" type="video/mp4"></video>
+              <figcaption>Kling AI：画面推进测试</figcaption>
+            </figure>
+            <figure class="video-card">
+              <video controls preload="metadata"><source src="assets/kling_ignite.mp4" type="video/mp4"></video>
+              <figcaption>Kling AI：火箭点火</figcaption>
+            </figure>
+            <figure class="video-card">
+              <video controls preload="metadata"><source src="assets/kling_rocket.mp4" type="video/mp4"></video>
+              <figcaption>Kling AI：火箭缓慢发射</figcaption>
+            </figure>
+            <figure class="video-card">
+              <video controls preload="metadata"><source src="assets/kling_flight.mp4" type="video/mp4"></video>
+              <figcaption>Kling AI：火箭飞行</figcaption>
+            </figure>
+            <figure class="video-card">
+              <video controls preload="metadata"><source src="assets/kling_landscape.mp4" type="video/mp4"></video>
+              <figcaption>Kling AI：场景生成</figcaption>
+            </figure>
+            <figure class="video-card">
+              <video controls preload="metadata"><source src="assets/laser_effect.mp4" type="video/mp4"></video>
+              <figcaption>AI 生成：像素激光特效</figcaption>
+            </figure>
+          </div>
+
+          <div class="prompt-block">
+            <div class="prompt-label">Kling 视频生成提示词思路</div>
+            <pre>画面向前推进，穿过冷湖沙漠地貌，
 天文观测基地的建筑轮廓在夜色中逐渐清晰，
 星空背景，银河可见，
 镜头语言：缓慢推轨 + 微俯角</pre>
+          </div>
+        </article>
       </div>
-    </div>
-  </div>
 
-  <div class="project-links">
-    <a href="assets/lengHu.pptx" class="btn" download>下载完整方案 (PPT)</a>
-  </div>
-</section>
-
-<!-- ====== 游戏 ====== -->
-<section id="game" class="section section-alt">
-  <h2 class="section-title">Satellite Star — 卫星之星</h2>
-  <p class="section-sub">AI 驱动的完整游戏开发管线</p>
-
-  <div class="project">
-    <div class="project-header">
-      <div class="project-media">
-        <img src="assets/gameplay.png" alt="游戏开场画面" class="project-img" loading="lazy">
+      <div class="project-links reveal">
+        <a href="assets/lengHu.pptx" class="btn" download>
+          <span class="btn-icon">↓</span>
+          下载完整方案 (PPT)
+        </a>
       </div>
-      <div class="project-info">
-        <span class="project-tag">Godot 4.7 · GDScript · ECS 架构</span>
-        <h3>自上而下的太空探索射击游戏</h3>
-        <p class="project-desc">
-          惯性漂移物理、鼠标瞄准射击、3层视差星空、小行星带渐进密度、
-          安全区检查点、空间站停靠胜利。全部代码、素材、测试由 AI 辅助完成。
-        </p>
-        <div class="project-stats">
-          <div><strong>19</strong>ECS系统</div>
-          <div><strong>184</strong>单元测试</div>
-          <div><strong>44</strong>E2E测试</div>
-          <div><strong>26</strong>AI素材</div>
+    </section>
+
+    <section id="game" class="section section-alt">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Game Project</p>
+        <h2>Satellite Star — 卫星之星</h2>
+        <p>AI 驱动的完整游戏开发管线</p>
+      </div>
+
+      <div class="project">
+        <div class="project-header reveal">
+          <div class="project-media">
+            <img src="assets/gameplay.png" alt="游戏开场画面" class="project-img" loading="lazy">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Godot 4.7 · GDScript · ECS 架构</span>
+            <h3>自上而下的太空探索射击游戏</h3>
+            <p class="project-desc">
+              惯性漂移物理、鼠标瞄准射击、3层视差星空、小行星带渐进密度、
+              安全区检查点、空间站停靠胜利。全部代码、素材、测试由 AI 辅助完成。
+            </p>
+            <div class="project-stats">
+              <div><strong>19</strong><span>ECS系统</span></div>
+              <div><strong>184</strong><span>单元测试</span></div>
+              <div><strong>44</strong><span>E2E测试</span></div>
+              <div><strong>26</strong><span>AI素材</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-flow reveal">
+          <div class="process-step">
+            <div class="step-num">1</div>
+            <strong>GDD 需求</strong>
+            <p>自然语言描述玩法 → AI 生成完整设计文档（12章）</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">2</div>
+            <strong>架构拆解</strong>
+            <p>PLAN / STRUCTURE / SCENES 三层文档自动分解</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">3</div>
+            <strong>并行开发</strong>
+            <p>20 个 Worker 子代理并行编码，每批自动集成测试</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">4</div>
+            <strong>自动验证</strong>
+            <p>228 个测试 55 秒全量通过，E2E 模拟真实按键</p>
+          </div>
+        </div>
+
+        <div class="project-detail reveal">
+          <h3>核心提示词示例</h3>
+          <div class="prompt-block">
+            <div class="prompt-label">游戏设计阶段</div>
+            <pre>设计一款自上而下的太空探索射击游戏。核心玩法：惯性漂移(WASD) + 鼠标瞄准射击。3层视差星空背景，小行星带密度从5-10递增到30-50。空间站出发 → 穿越小行星带 → 到达目的地 → 返回停靠 = 胜利</pre>
+          </div>
+          <div class="prompt-block">
+            <div class="prompt-label">素材生成 (nanobanana image-to-image)</div>
+            <pre>参照这张图的风格氛围，生成原创深空主题背景。不要文字不要UI，不要抄袭构图，保持宇宙深邃感和星云色调</pre>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="process-flow">
-      <div class="process-step">
-        <div class="step-num">1</div>
-        <strong>GDD 需求</strong>
-        <p>自然语言描述玩法 → AI 生成完整设计文档（12章）</p>
+    <section id="ai" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">AI Workflow</p>
+        <h2>AI 工作流</h2>
+        <p>用清晰的提示词和结构化框架驱动 AI 协作</p>
       </div>
-      <div class="process-arrow">&rarr;</div>
-      <div class="process-step">
-        <div class="step-num">2</div>
-        <strong>架构拆解</strong>
-        <p>PLAN / STRUCTURE / SCENES 三层文档自动分解</p>
+
+      <div class="ai-grid">
+        <article class="ai-card reveal">
+          <div class="ai-icon">⌘</div>
+          <h3>精准提示词</h3>
+          <p>不是 "做一个游戏"，而是把玩法、物理、UI、场景逐层拆解。GDD 从需求到验收标准 12 个章节全覆盖。</p>
+        </article>
+        <article class="ai-card reveal">
+          <div class="ai-icon">▤</div>
+          <h3>框架驱动</h3>
+          <p>PLAN / STRUCTURE / SCENES 三层文档把模糊需求变成可并行执行的任务树。每个 worker 拿到的是一份完整 brief。</p>
+        </article>
+        <article class="ai-card reveal">
+          <div class="ai-icon">◉</div>
+          <h3>AI 视频生成</h3>
+          <p>Kling + 提示词迭代，控制画面推进速度、光影和构图。分镜规划 → 逐帧提示词 → 反复调优。</p>
+        </article>
+        <article class="ai-card reveal">
+          <div class="ai-icon">✓</div>
+          <h3>自动测试验证</h3>
+          <p>228 个测试自动运行，截图对比画面变化，不靠肉眼检查。每次改动 55 秒出全量结果。</p>
+        </article>
       </div>
-      <div class="process-arrow">&rarr;</div>
-      <div class="process-step">
-        <div class="step-num">3</div>
-        <strong>并行开发</strong>
-        <p>20 个 Worker 子代理并行编码，每批自动集成测试</p>
+
+      <div class="ai-contrast reveal">
+        <h3>AI 加速对比</h3>
+        <div class="table-wrap">
+          <table class="contrast-table">
+            <thead><tr><th>环节</th><th>传统方式</th><th>AI 增强</th></tr></thead>
+            <tbody>
+              <tr><td>游戏策划文档</td><td>2-3 天</td><td>1.5 小时对话</td></tr>
+              <tr><td>视频宣传片</td><td>团队拍摄 1-2 周</td><td>Kling 生成 + 后期 1 天</td></tr>
+              <tr><td>19 个系统编码</td><td>2-3 周</td><td>4 批次并行</td></tr>
+              <tr><td>26 个游戏素材</td><td>外包 1-2 周</td><td>nanobanana 1 小时</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-      <div class="process-arrow">&rarr;</div>
-      <div class="process-step">
-        <div class="step-num">4</div>
-        <strong>自动验证</strong>
-        <p>228 个测试 55 秒全量通过，E2E 模拟真实按键</p>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About</p>
+        <h2>关于</h2>
       </div>
-    </div>
-
-    <div class="project-detail">
-      <h4>核心提示词示例</h4>
-      <div class="prompt-block">
-        <div class="prompt-label">游戏设计阶段</div>
-        <pre>设计一款自上而下的太空探索射击游戏。核心玩法：惯性漂移(WASD) + 鼠标瞄准射击。3层视差星空背景，小行星带密度从5-10递增到30-50。空间站出发 → 穿越小行星带 → 到达目的地 → 返回停靠 = 胜利</pre>
+      <div class="about-content reveal">
+        <div class="about-text">
+          <p>北京工业大学耿丹学院数字媒体艺术专业大三在读。</p>
+          <p>核心能力不是写代码，而是把需求拆成 AI 能理解的粒度，用清晰的提示词和结构化框架驱动多代理协作。</p>
+          <p>从游戏开发到三维可视化到 AI 视频生成，一套方法论贯穿所有项目。</p>
+        </div>
+        <div class="about-contact">
+          <a href="https://github.com/c17323" class="btn btn-outline" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="#hero" class="btn">回到顶部</a>
+        </div>
       </div>
-      <div class="prompt-block">
-        <div class="prompt-label">素材生成 (nanobanana image-to-image)</div>
-        <pre>参照这张图的风格氛围，生成原创深空主题背景。不要文字不要UI，不要抄袭构图，保持宇宙深邃感和星云色调</pre>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
+  </main>
 
-<!-- ====== AI 工作流 ====== -->
-<section id="ai" class="section">
-  <h2 class="section-title">AI 工作流</h2>
-  <p class="section-sub">用清晰的提示词和结构化框架驱动 AI 协作</p>
+  <footer class="footer">
+    <p>陈海川 &copy; 2026 · 北京工业大学耿丹学院 数字媒体艺术</p>
+  </footer>
 
-  <div class="ai-grid">
-    <div class="ai-card">
-      <div class="ai-icon">&#x1F4CB;</div>
-      <h4>精准提示词</h4>
-      <p>不是 "做一个游戏"，而是把玩法、物理、UI、场景逐层拆解。GDD 从需求到验收标准 12 个章节全覆盖。</p>
-    </div>
-    <div class="ai-card">
-      <div class="ai-icon">&#x1F3D7;</div>
-      <h4>框架驱动</h4>
-      <p>PLAN / STRUCTURE / SCENES 三层文档把模糊需求变成可并行执行的任务树。每个 worker 拿到的是一份完整 brief。</p>
-    </div>
-    <div class="ai-card">
-      <div class="ai-icon">&#x1F4F9;</div>
-      <h4>AI 视频生成</h4>
-      <p>Kling + 提示词迭代，控制画面推进速度、光影和构图。分镜规划 → 逐帧提示词 → 反复调优。</p>
-    </div>
-    <div class="ai-card">
-      <div class="ai-icon">&#x1F5A5;</div>
-      <h4>自动测试验证</h4>
-      <p>228 个测试自动运行，截图对比画面变化，不靠肉眼检查。每次改动 55 秒出全量结果。</p>
-    </div>
-  </div>
-
-  <div class="ai-contrast">
-    <h4>AI 加速对比</h4>
-    <table class="contrast-table">
-      <thead><tr><th>环节</th><th>传统方式</th><th>AI 增强</th></tr></thead>
-      <tbody>
-        <tr><td>游戏策划文档</td><td>2-3 天</td><td>1.5 小时对话</td></tr>
-        <tr><td>视频宣传片</td><td>团队拍摄 1-2 周</td><td>Kling 生成 + 后期 1 天</td></tr>
-        <tr><td>19 个系统编码</td><td>2-3 周</td><td>4 批次并行</td></tr>
-        <tr><td>26 个游戏素材</td><td>外包 1-2 周</td><td>nanobanana 1 小时</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<!-- ====== 关于 ====== -->
-<section id="about" class="section section-alt">
-  <h2 class="section-title">关于</h2>
-  <div class="about-content">
-    <div class="about-text">
-      <p>北京工业大学耿丹学院数字媒体艺术专业大三在读。</p>
-      <p>核心能力不是写代码，而是把需求拆成 AI 能理解的粒度，用清晰的提示词和结构化框架驱动多代理协作。</p>
-      <p>从游戏开发到三维可视化到 AI 视频生成，一套方法论贯穿所有项目。</p>
-    </div>
-    <div class="about-contact">
-      <a href="https://github.com/c17323" class="btn btn-outline" target="_blank">GitHub</a>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <p>陈海川 &copy; 2026 &mdash; 北京工业大学耿丹学院 数字媒体艺术</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
